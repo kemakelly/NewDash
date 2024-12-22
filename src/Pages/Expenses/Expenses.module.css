@@ -1,0 +1,124 @@
+.Expenses{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.income{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+}
+.FiatExpenses{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.income button{
+    padding: .6rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5em;
+    background:var( --background-button);
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   
+}
+.income button:focus{
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+.filterButAmountContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: start;
+    align-items: start;
+}
+.filterButContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    margin-bottom: .5rem;
+}
+.CryptoExpenses{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.TotalExpenses{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .income {
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    .income button {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .filterButContainer {
+        justify-content: end;
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .income {
+        flex-direction: column;
+        align-items: stretch;
+        column-gap: 0;
+        row-gap: .8rem;
+    }
+
+    .income button {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .filterButAmountContainer,
+    .filterButContainer {
+        flex-direction: column;
+        align-items: end;
+        justify-content: start;
+    }
+    .CryptoList{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items:start;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+}

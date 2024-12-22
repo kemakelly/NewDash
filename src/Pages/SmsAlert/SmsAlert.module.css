@@ -1,0 +1,252 @@
+.SmsAlert{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1rem;
+}
+
+.smsbutton{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    column-gap: 4rem;
+}
+
+.buts{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: .6rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5em;
+    background:var( --background-button);
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    column-gap: .5rem;
+    outline: none;
+    border: none;
+}
+.buts:focus{
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+.Allcontainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1rem;
+}
+.Mentions{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1rem;
+}
+.Completed{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1rem;
+}
+.smsListContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: .5rem 0;
+    row-gap: 1rem;
+}
+.list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    align-items: center;
+    background-color:var(  --background-sidebar);
+    padding: .4rem 2rem;
+    border-radius: .5rem;
+}
+.imgs{
+    width: 60px;
+    height: 60px;
+}
+.imgs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--nav-hover-background);
+}
+.imgTitleList{
+width: fit-content;
+height: auto;
+display: flex;
+flex-direction: row;
+justify-content: start;
+align-items: center;
+column-gap: .5rem;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    row-gap: .3rem;
+}
+.name h5{
+    font-size: .8rem;
+    color:var(--nav-hover-background);
+    font-weight: 500;
+}
+.name p{
+    font-size: .9rem;
+    color:  var(--nav-background);
+}
+.del{
+    font-size: 1.5rem;
+    color: var(--nav-background);
+    cursor: pointer;
+}
+.del:hover{
+    color: red;
+}
+.mentionContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items:center;
+    padding: 1rem 2rem;
+}
+.mentionlistContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1rem 0;
+    row-gap: 1rem;
+}
+.RequestContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items:center;
+    padding: 1rem 2rem;
+}
+.RequestlistContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1rem 0;
+    row-gap: 1rem;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .SmsAlert{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-top: 5rem 0;
+    }
+    .smsbutton {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+        column-gap: 0;
+    }
+
+    .buts {
+        width: 100%;
+        justify-content: center;
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+    }
+
+    .imgs {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mentionContainer, .RequestContainer {
+        padding: 1rem;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+    .smsbutton {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .buts {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .list {
+        flex-direction: row;
+        align-items: center;
+        padding: 0.8rem;
+    }
+
+    .imgs {
+        width: 20px;
+        height: 20px;
+    }
+
+    .name h5 {
+        font-size: 0.8rem;
+    }
+
+    .name p {
+        font-size: 0.5rem;
+    }
+
+    .del {
+        font-size: 1rem;
+    }
+}

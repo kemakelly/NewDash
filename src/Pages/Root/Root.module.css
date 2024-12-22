@@ -1,0 +1,78 @@
+.Rootlayout{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin:  auto;
+}
+.sidebarsegment{
+    width: auto;
+    height: 100%;
+    background-color:var(--background-sidebar);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: .5rem;
+}
+.mainSegment{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: var(--background-main);
+}
+.IncomeLayout{
+    width: 100%;
+    height: auto;
+}
+.ExpenseLayout{
+    width: 100%;
+    height: auto;
+  
+}
+.SmsAlerLayout{
+    width: 100%;
+    height: auto;
+}
+.InvestmentLayout{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px){
+    .Rootlayout{
+        width: 100%;
+        height:100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        margin:  auto;
+    }
+    .sidebarsegment{
+        width: auto;
+        height: 100%;
+        background-color:var(--background-sidebar);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: .5rem;
+    }
+    .mainSegment{
+        flex: 1;
+        min-height: calc(var(--vh, 1vh) * 100);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        background-color: var(--background-main);
+        overflow-y: auto;
+    }
+
+}
